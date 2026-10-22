@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #ffffff;
+    color: #3a0a54;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #6c0662;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 0 0 10px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+a {
+    color: #7c0044;
+}
+
+code,
+pre {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.header {
+    padding: 50px 0 40px;
+
+    background-color: #000000;
+    color: #ffffff;
+
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.header h1 {
+    color: #f1502f;
+    font-family: JetBrainsMono-Regular;
+    text-align: left;
+}
+
+.descricao {
+    max-width: 700px;
+    margin: 0;
+
+    color: #d9c9e8;
+}
+
+.menu-lista {
+    margin: 25px 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.menu-lista li {
+    display: inline-block;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-link {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background-color: #f1502f;
+    color: #6c0662;
+
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(255, 5, 230, 0.3);
+
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-link:hover {
+    background-color: #d67215;
+    color: #000000;
+
+    transform: translateY(-3px);
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.titulo-secao {
+    border-radius: 50%;
+    margin-top: 0;
+    margin-bottom: 3px;
+    padding-left: 3px;
+
+    border-left: 3px solid #ff9900;
+}
+
+.grade-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.card {
+    padding: 26px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #ecdff3;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px rgba(255, 145, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 10px 22px #f1502f;
+    transform: translateY(-4px);
+}
+
+.card code {
+    color: #ff9100;
+}
+
+.exemplo {
+    margin-bottom: 0;
+    padding: 12px 14px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    border-radius: 8px;
+}
+
+.exemplo code {
+    color: #ffa600;
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 35px 0;
+
+    background: linear-gradient(135deg, #000000 0%, #f1502f 50%, #000000 100%);
+    color: #ff00ea;
+
+    text-align: center;
+}
+
+.footer a {
+    color: #f0b6dd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+    .grade-cards {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}

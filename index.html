@@ -1,39 +1,94 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub | Instruções</title>
     <link rel="stylesheet" href="./style/style-geral.css">
 </head>
+
 <body>
+    <header class="header">
+        <div class="container">
+            <h1>GitHub & Git</h1>
 
-    <header class="cabecalho">
-        <div class="logo">
-            <img src="img/logo-rd-removebg-preview.png" alt="Logo de Rafael">
-            <h1>Rafael Domingues</h1>
-            <h2>Desenvolvedor</h2>
+            <p class="descricao">
+                Este site foi feito para mostrar o passo a passo de como usar os comandos do GitHub e Git
+            </p>
+
+            <nav class="menu-principal">
+                <ul class="menu-lista">
+                    <li><a class="menu-link" href="./index.html">Home</a></li>
+                    <li><a class="menu-link" href="./pages/biografia.html">Biografia</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Sobre mim</a></li>
-                <li><a href="projetos.html">Meus projetos</a></li>
-                <li><a href="curriculo.html">Currículo</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
     </header>
-
 
     <main>
         <section class="section">
+            <div class="container">
+                <h2 class="titulo-secao">Comandos GitHub</h2>
 
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3>Git Init</h3>
+                        <p>
+                            O <code>git init</code> cria um novo repositório Git.
+                            Ele cria uma pasta oculta <code>.git</code> que armazena
+                            todo o histórico e configuração do projeto.
+                        </p>
+                        <p class="exemplo"><code>git init</code></p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Git Add</h3>
+                        <p>
+                            O <code>git add</code> adiciona arquivos ao "stage" (área de preparo),
+                            marcando-os para serem incluídos no próximo commit.
+                            Pode ser usado para adicionar arquivos específicos ou todos os arquivos
+                            de uma vez (com <code>git add .</code>).
+                        </p>
+                        <p class="exemplo"><code>git add .</code></p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Git Commit</h3>
+                        <p>
+                            O <code>git commit</code> salva as alterações preparadas no histórico do repositório,
+                            criando um "snapshot" do projeto em um determinado momento. Cada commit possui uma
+                            mensagem descritiva e um identificador único (hash).
+                        </p>
+                        <p class="exemplo"><code>git commit -m "Mensagem do commit"</code></p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Git Status</h3>
+                        <p>
+                            O <code>git status</code> exibe o estado atual do diretório de trabalho e da área de
+                            preparo, mostrando quais arquivos foram modificados, quais estão no stage e quais
+                            não estão sendo rastreados pelo Git.
+                        </p>
+                        <p class="exemplo"><code>git status</code></p>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
-    
+
     <footer class="footer">
-        <p>&copy; 2024 Rafael Domingues. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; Rafael Domingues – 2026</p>
+            <address>
+                <a href="mailto:rafadominguesdev@gmail.com">Email</a>
+                <span> | </span>
+                <a href="tel:+5515998080000">Telefone</a>
+                <span> | </span>
+                <a href="https://github.com/rafaeldominguesdev" target="_blank">GitHub</a>
+            </address>
+        </div>
     </footer>
 </body>
+
 </html>
